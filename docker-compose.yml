@@ -1,9 +1,5 @@
 version: '3'
 
-volumes:
-  mysql_data:
-      driver: local
-
 services:
   postgres:
     image: 'postgres:alpine'
