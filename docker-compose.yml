@@ -28,6 +28,7 @@ services:
         KEYCLOAK_ADMIN_PASSWORD: admin
         PROXY_ADDRESS_FORWARDING: "true"
         KC_CACHE_CONFIG_FILE: cache-custom.xml
+        KC_CACHE: JDBC_PING
       depends_on:
          - postgres
       ports:
@@ -48,6 +49,7 @@ services:
         KEYCLOAK_ADMIN_PASSWORD: admin
         PROXY_ADDRESS_FORWARDING: "true"
         KC_CACHE_CONFIG_FILE: cache-custom.xml
+        KC_CACHE: JDBC_PING
       depends_on:
         - postgres
   kc_lb:
